@@ -1,0 +1,102 @@
+
+
+.OrderBasket .basketItem {
+    padding:20px;
+    margin:15px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    color: #666;
+    font-family: Poppins, Arial;
+    font-size:0.9em;
+    padding:20px;
+    animation-name: body-appear;
+    animation-duration: 1s;
+}
+
+@keyframes body-appear {
+    from {opacity: 0;}
+    to {opacity:1;}
+}
+
+fieldset{
+    background-color: #fcfcfc;
+    border:1px solid #eee;
+    border-radius: 5px;
+    margin-bottom:10px;
+    max-width: 350px;
+    padding: 10px;
+    width:98%;
+}
+
+legend{
+    color:#86BCDA;
+    font-size:140%;
+}
+
+button, input, textarea{
+    margin:7px;
+}
+
+label{
+    margin: 10px 0 0 10px;
+}
+
+radio{
+    margin-left:15px;
+}
+
+.field-error{
+    background-color:#fccfcf !important;
+    border:1px solid red !important;
+}
+
+.error-message::before{
+    content: "⚠ ";
+}
+
+.error-message{
+    color:red;
+    font-size: 0.8em;
+    margin-left:10px;
+}
+
+input[type=text], textarea, select{
+    background-color: white;
+    border:1px solid#efefef;
+    border-radius: 2px;
+    -moz-box-shadow:    inset 0 0 3px #eee;
+    -webkit-box-shadow: inset 0 0 3px #eee;
+    box-shadow:         inset 0 0 3px #eee;
+    margin:5px 20px;
+    max-width: 250px;
+    padding: 10px;
+    transition: background-color 1s;
+    width:98%;
+}
+
+input[type=text]:focus,
+textarea:focus{
+    background-color: #f7fcff;
+    border:2px solid #e8f5fc;
+    padding: 9px;
+    transition: background-color 1s;
+
+}
+
+input[type=submit]{
+    border:1px solid #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 10px;
+    padding:10px;
+    transition: background-color 1s;
+    width:150px;
+}
+
+input[type=submit]:hover{
+    background-color: #86BCDA;
+    transition: background-color 2s;
+}
